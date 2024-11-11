@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="audio" src="src/sound _files/song2.mp3"></audio>
+    <div class="controls">
+        <div id="playButton" onclick="toggle()">
+            <img id ="icon" src="src/icons/play.png">
+        </div>
+        <div class="volumeControl">
+            <img id="volumeIcon" src="src/icons/volume3.png" onclick="toggleMute()">
+            <input type="range" value="80" max="100" class="slider" id="volume">
+        </div>
+        <input type="range" value="0" class="slider" id="progBar">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
